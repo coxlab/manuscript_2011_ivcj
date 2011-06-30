@@ -52,6 +52,15 @@ fraction of these off-axis faces, then a system trained exclusively on
 the \emph{LFW} set will face difficulty learning to tolerate these cases, even
 if that system has the capability to learn such tolerance in principle.
 
+At the same time, experiments with synthetic faces suggest that the underlying 
+representations (particularly of the best three layer model) can indeed tolerate
+significant variation in face pose, provided that adequately diverse training data
+is available.  More generally, the steady progression towards larger 
+and larger tolerance to variation when more processing layers are added to the 
+model provides encouragement that hierarchical models such as these provide 
+a promising path forward in the construction of transformation-invariant 
+representations.
+
 As continued research manages to chip away at the remaining ``performance gap''
 between human and machines on the \emph{LFW} set, increased attention will need
 to be paid to whether \emph{LFW} truly represents the problem of interest.  On
