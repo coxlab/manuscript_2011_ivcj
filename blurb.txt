@@ -1,0 +1,1 @@
+We describe a large-scale feature search approach that generates features that exceed current state-of-the-art performance  on the challenging LFW face set.  Because our approach generates feature descriptors (in analogy to SIFT and HOG), these new, more complex features could serve as valuable building blocks for a variety of future approaches.

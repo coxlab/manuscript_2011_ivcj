@@ -1,0 +1,64 @@
+Face recognition has long been, and continues to be, a highly active area of research \cite{belhumeur2002eigenfaces,yang2002kernel,vasilescu2002multilinear,zhao2003face,he2005face,hua2007face,hua2009robust,guillaumin2009you,hua2009robust,wright2009implicit,zou2007comparative}.
+In recent years, interest in the problem of \emph{unconstrained} face
+recognition has grown in the community, driven in large part by the creation of
+the \emph{Labeled Faces in the Wild (LFW)} \cite{huang:lfw} test set, which has
+provided a standardized benchmark against which to measure progress.  While
+face recognition research \foreign{per se} has a long and rich history, much
+work prior to the last decade was focused on face recognition in relatively
+constrained environments (e.g. posed photographs, under controlled  lighting
+conditions \cite{orl,yale,cvl,ar,phillips2000feret,gross2009multi}).  More
+recently, thanks in large part to the rise of the internet, it has become
+possible to assemble large collections of face images ``in the wild'' in the
+sense that they come from a wide variety of sources and were not posed for the
+purpose of research.  While this set has proven to be quite challenging, large
+strides have been in made in recent years towards higher performance
+\cite{pinto:eccv08,pinto:cvpr09,taigman:bmvc09,wolf:accv09,kumar:iccv09,cao2010face}.
+
+While a variety of different approaches to the \emph{LFW} set have been taken,
+a common feature of most approaches is the use of some low-level visual feature
+set, such as SIFT \cite{sift,luo2007person}; HOG
+\cite{dalal2005hog,albiol2008face}; or LBP
+\cite{ahonen2004face,ahonen2006face} that transforms raw pixels values into a
+better form for subsequent processing.  While individual algorithms often do
+not depend critically on the choice of a particular feature representation
+used, the choice of features used does frequently play a key role in
+determining performance.  Meanwhile, there are only a handful of visual feature
+representations in common use, and arguably less attention has been paid to
+developing new or better features.
+
+One potentially promising source for new, more complex visual feature representations is the
+class of ``biologically-inspired'' representations.
+Biologically-inspired approaches seek to build artificial visual 
+systems that capture aspects of the computational architecture of the brain, in the hope of
+eventually mimicking its computational abilities. Such efforts to model visual
+computations done by the brain have a long history, at least dating back to
+Fukushima's Neocognitron (1980; \cite{fukushima1980neocognitron}).  More recent
+experiments with biologically-inspired models have shown them to be highly
+competitive in a variety of different face and object recognition
+contexts \cite{serre2007ror,mutch2008ocr,pinto:plos08,pinto:eccv08,jarrett-iccv-09}.
+
+However, the range of possible feature representations that would count as ``biologically-inspired'' 
+is broad, and it is not clear which particular instantiations of biologically-inspired
+ideas are best for a given task.  Pinto et al. \cite{pinto:plos09} previously demonstrated a 
+high-throughput screening approach for biologically-inspired algorithms, wherein a large
+number of possible candidate models  from an inclusive model family are considered, 
+and the best performing models are ``skimmed off the top'' 
+and evaluated further.  However, while that work showed success with synthetic test 
+images, it has not been known to date whether models from this class are competitive with 
+current state-of-the-art approaches on standard face and object recognition test sets.
+
+Here we present a modified large-scale feature search procedure that simplifies and accelerates the
+search procedure described in \cite{pinto:plos09}, with the goal of generating feature
+representations tailored for unconstrained face recognition, as embodied by the
+\emph{LFW} test set.  Multiple complimentary representations are further derived through
+training set augmentation, alternative face comparison functions, and feature set searches 
+with a varying number of model layers.  These individual feature representations are then 
+combined using kernel techniques to achieve even better performance.
+We show that our approach yields multiple feature sets that 
+outperform previous state-of-the-art approaches on the \emph{LFW} set,
+even while requiring less training data and using simpler machine learning backends.
+Finally, as a complement to experiments with natural face images, we characterize the tolerance of the resulting representations to various kinds of image transformations using rendered face images undergoing known view transformations.
+In addition to providing evidence for the utility of large-scale feature search for standard 
+``real world'' test sets, these results emphasize the value of good underlying 
+representations and point a path forward in the generation of new, more powerful visual features.
+

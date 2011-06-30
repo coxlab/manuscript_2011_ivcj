@@ -1,0 +1,102 @@
+
+
+
+
+@article{guillaumin2009you,
+  title={{Is that you? Metric learning approaches for face identification}},
+  author={Guillaumin, M. and Verbeek, J. and Schmid, C.},
+  journal={ICCV},
+  year={2009}
+}
+
+@article{cao2010face,
+  title={{Face recognition with learning-based descriptor}},
+  author={Cao, Z. and Yin, Q. and Tang, X. and Sun, J.},
+  journal={CVPR},
+  year={2010}
+}
+
+
+@article{turk1991face,
+  title={{Face recognition using eigenfaces}},
+  author={Turk, M. and Pentland, A.},
+  journal={CVPR},
+  year={1991}
+}
+
+
+@article{zhao2003face,
+  title={{Face recognition: A literature survey}},
+  author={Zhao, W. and Chellappa, R. and Phillips, PJ and Rosenfeld, A.},
+  journal={ACM Computing Surveys},
+  year={2003}
+}
+
+
+@article{hua2009robust,
+  title={{A robust elastic and partial matching metric for face recognition}},
+  author={Hua, G. and Akbarzadeh, A.},
+  journal={ICCV},
+  year={2009}
+}
+
+
+@article{belhumeur2002eigenfaces,
+  title={{Eigenfaces vs. fisherfaces: Recognition using class specific linear projection}},
+  author={Belhumeur, P.N. and Hespanha, J.P. and Kriegman, D.J.},
+  journal={PAMI},
+  year={2002}
+}
+
+@article{he2005face,
+  title={{Face recognition using laplacianfaces}},
+  author={He, X. and Yan, S. and Hu, Y. and Niyogi, P. and Zhang, H.J.},
+  journal={PAMI},
+  year={2005}
+}
+
+@article{hua2007face,
+  title={{Face recognition using discriminatively trained orthogonal rank one tensor projections}},
+  author={Hua, G. and Viola, P.A. and Drucker, S.M.},
+  journal={CVPR},
+  year={2007}
+}
+
+@article{wright2009implicit,
+  title={{Implicit elastic matching with random projections for pose-variant face recognition}},
+  author={Wright, J. and Hua, G.},
+  journal={CVPR},
+  year={2009},
+}
+
+@article{yang2002kernel,
+  title={{Kernel eigenfaces vs. kernel fisherfaces: Face recognition using kernel methods}},
+  author={Yang, M.H.},
+  journal={FG}
+  year={2002},
+}
+
+@article{zou2007comparative,
+  title={{A Comparative Study of Local Matching Approach for Face Recognition}},
+  author={Zou, J. and Ji, Q. and Nagy, G.},
+  journal={IEEE Transactions on Image Processing},
+  year={2007}
+}
+
+@article{vasilescu2002multilinear,
+  title={{Multilinear image analysis for facial recognition}},
+  author={Vasilescu, M. and Terzopoulos, D.},
+  booktitle={ICPR},
+  year={2002}
+}
+
+@article{pentland1994view,
+  title={{View-based and modular eigenspaces for face recognition}},
+  author={Pentland, A. and Moghaddam, B. and Starner, T.},
+  journal={CVPR}
+  year={2002}
+}
+
++ PAMI cite from Todd
+
+

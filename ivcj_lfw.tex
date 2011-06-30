@@ -1,0 +1,139 @@
+\documentclass[preprint, 12pt]{elsarticle}
+%\documentclass[letterpaper, 10 pt, conference]{ieeeconf}  % Comment this line out
+                                                          % if you need a4paper
+%\documentclass[a4paper, 10pt, conference]{ieeeconf}      % Use this line for a4
+                                                          % paper
+
+%\IEEEoverridecommandlockouts                              % This command is only
+                                                          % needed if you want to
+                                                          % use the \thanks command
+%\overrideIEEEmargins
+
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb} % define this before the line numbering.
+\usepackage{lineno}
+\usepackage{color}
+
+%===========================================================
+\usepackage{multirow}
+\usepackage[tight,normalsize,sf,SF]{subfigure}
+
+\usepackage{array} \newcommand{\vectornorm}[1]{\left|\left|#1\right|\right|}
+\newcommand{\foreign}[1]{\emph{#1}}
+
+%===========================================================
+
+%\author{Anonymous Submission}
+\journal{Image and Vision Computing Journal}
+
+\begin{document}
+
+\begin{frontmatter}
+
+\title{
+Beyond Simple Features: A Large-Scale Feature Search Approach to Unconstrained Face Recognition
+}
+
+\author[rowland,mit]{Nicolas Pinto}
+\ead{pinto@rowland.harvard.edu}
+
+\author[rowland]{David D. Cox}
+\ead{cox@rowland.harvard.edu}
+
+\address[rowland]{The Rowland Institute at Harvard, Harvard University, Cambridge, MA 02142}
+\address[mit]{McGovern Institute for Brain Science at MIT, Cambridge, MA 02139}
+
+
+%===========================================================
+\begin{abstract}
+Many modern computer vision algorithms are built atop of a set of low-level
+feature operators (such as SIFT \cite{sift,luo2007person}; HOG \cite{dalal2005hog,albiol2008face}; or LBP
+\cite{ahonen2004face,ahonen2006face}) that transform raw pixel values into a representation better
+suited to subsequent processing and classification.  While the choice of feature
+representation is often not central to the logic of a given algorithm, the
+quality of the feature representation can have critically important implications
+for performance.  Here, we demonstrate a large-scale feature search approach to
+generating new, more powerful feature representations in which a multitude of
+complex, nonlinear, multilayer neuromorphic feature representations are randomly
+generated and screened to find those best suited for the task at hand.  In
+particular, we show that a brute-force search can generate representations that,
+in combination with standard machine learning blending techniques, achieve
+state-of-the-art performance on the \emph{Labeled Faces in the Wild (LFW)} \cite{huang:lfw}
+unconstrained face recognition challenge set.  These representations outperform
+previous state-of-the-art approaches, in spite of requiring less training data
+and using a conceptually simpler machine learning backend.  We argue that such
+large-scale-search-derived feature sets can play a synergistic role with other
+computer vision approaches by providing a richer base of features with which to
+work.
+
+\end{abstract}
+
+\begin{keyword}
+face recognition \sep biologically-inspired
+\end{keyword}
+
+\end{frontmatter}
+
+
+% Neuromorphic vision systems -- those that draw inspiration from the brain --
+% have been demonstrated to be a powerful class of algorithms for a variety of
+% face and object recognition tasks
+% \cite{serre2007ror,mutch2008ocr,pinto:plos08,pinto:eccv08,jarrett-iccv-09}.
+
+% We show that
+% minor adjustment of the comparison function used can bring a simple,
+% single-layer \emph{V1-like} model \cite{pinto:plos08} to within a few percent of
+% state-of-the-art performance.  Further, by employing high-throughput screening
+% and simple kernel blending techniques, we show that more sophisticated
+% multi-layer architectures \cite{pinto:plos09} can achieve
+% state-of-the-art performance.  To the extent that one accepts that the LFW set
+% is a good surrogate for the problem of unconstrained face verification, these
+% results show that our neuromorphic models are competitive with other
+% state-of-the-art approaches, even without invoking particularly sophisticated
+% machine learning techniques.  At the same time, we present an analysis of the
+% errors made by our various models, and show that each of them makes appreciably
+% the same errors, and that a large fraction of errors can be qualitatively
+% explained by variation in the view of the targets. We argue that seriously
+% tackling such image variation, and building sets that contain more real-world
+% variation, will be an essential component of future research in unconstrained
+% face recognition.
+
+
+% -----------------------------------------------------------------------------
+\section{Introduction}
+% -----------------------------------------------------------------------------
+
+\input{introduction.tex}
+
+%------------------------------------------------------------------------------
+\section{Methods}
+% -----------------------------------------------------------------------------
+
+\input{methods.tex}
+
+% -----------------------------------------------------------------------------
+\section{Results}
+% -----------------------------------------------------------------------------
+
+\input{results.tex}
+
+% -----------------------------------------------------------------------------
+\section{Discussion}
+% -----------------------------------------------------------------------------
+
+\input{discussion.tex}
+
+% -----------------------------------------------------------------------------
+\section{Acknowledgments}
+% -----------------------------------------------------------------------------
+The authors would like to thank Hanspeter Pfister, Wen-Mei Hwu, Volodymyr
+Kindratenko and Jeremy Enos for making additional GPU clusters available for
+this work. This work was funded by the Rowland Institute of Harvard, the NVIDIA
+Graduate Fellowship, and the National Science Foundation (IIS 0963668).
+Hardware support was generously provided by the NVIDIA Corporation.
+
+
+\bibliographystyle{elsarticle-harv}
+\bibliography{ivcj_lfw}
+
+\end{document}

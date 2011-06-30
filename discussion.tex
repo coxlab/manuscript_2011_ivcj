@@ -1,0 +1,61 @@
+
+Our results provide more evidence that biologically-inspired models represent a promising
+and powerful direction in face recognition research. Individual models from this
+class are able to achieve good performance (e.g. around 77\% for \emph{V1-like} models,
+84\% for \emph{HT-L3}), and blends of these models achieve more than 88\%
+correct performance, beating previously reported state-of-the-art values.
+
+Consistent with expectations, progressively more complex, multi-layer models are
+able to outperform the simpler \emph{V1-like} model. Whether this higher
+performance is due to a greater ability to tolerate image variation (one of the
+original purposes for the construction of the \emph{HT-L3} model
+class\cite{pinto:plos09}) or some other factor remains to be seen. It should be
+noted that the \emph{HT-L2} and \emph{HT-L3} models used here were substantially
+simplified from those present in \cite{pinto:plos09}, in that they did not have
+structured filter kernels, nor were they subjected to any unsupervised learning.
+Whether adding these features back will result in higher levels of performance
+is an important future research question.
+
+While there still remains substantial room for improvement, concerns that
+the \emph{LFW} set does not necessarily accurately reflect the ``full'' problem
+of unconstrained face recognition
+remain \cite{pinto:eccv08,pinto:cvpr09,kumar:iccv09}.  \emph{LFW} includes only
+a handful of examples per individual, and these photographs were often taken in
+the same setting and at the same event.  Furthermore, Kumar et
+al. \cite{kumar:iccv09} showed that human observers were able to perform at
+greater-than-90\% correct even when the faces themselves were masked out of the
+test images, indicating that the backgrounds in the \emph{LFW} are more than
+sufficient for solving the task at a level higher than the current machine state
+of the art.
+
+An analysis of the errors made by our models provides some clues about which
+parts of the \emph{LFW} set are difficult and which ones are not.  Our models
+failed on remarkably similar sets of face pairs, indicating that a common core
+of ``hard'' images may exist within the larger \emph{LFW} set.  A striking,
+albeit anecdotal, observation is that common error cases are dominated by misses
+when the same individual is shown in differing views and by false positives
+when two different individuals are compared while viewed from a similar angle
+(e.g. Fig. \ref{fig:error_examples}).  An important feature of the \emph{LFW}
+set is that faces must be detected by a Viola-Jones face detector in order to be
+included in the set, and this effectively restricts the range of face views that
+enter into the set (i.e. there is a bias towards frontal views).  We hypothesize
+that those more off-axis views that do manage to pass the face detection filter
+will present a particularly difficult challenge for a system trained on
+the \emph{LFW} set.  The low-level (e.g. pixel-level) difference between two
+different views of the same individual can easily be larger than the low-level
+differences between two individuals in a similar pose.  A system that is not
+specially designed to tolerate this kind of variation will have a high false
+alarm rate on trials where two different individuals are seen in the same pose
+and a high miss rate where the same individual is compared across different
+poses.  At the same time, if the \emph{LFW} set contains a relatively small
+fraction of these off-axis faces, then a system trained exclusively on
+the \emph{LFW} set will face difficulty learning to tolerate these cases, even
+if that system has the capability to learn such tolerance in principle.
+
+As continued research manages to chip away at the remaining ``performance gap''
+between human and machines on the \emph{LFW} set, increased attention will need
+to be paid to whether \emph{LFW} truly represents the problem of interest.  On
+one hand, as long as some performance gap exists, the set is obviously valid at
+a basic level.  However, the question remains whether a ``fuller'' formulation
+of the problem (i.e. more natural, less filtered) might lead to faster progress.
+
