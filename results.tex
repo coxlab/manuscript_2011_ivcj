@@ -51,9 +51,11 @@ curves for various blend groupings are shown in Fig. \ref{fig:roc_curves}.
 \hline
 %Reference & Kumar et al. ICCV09 \cite{kumar:iccv09} & Wolf et al. ACCV09 \cite{wolf:accv09} & Cao et al. CVPR10 \cite{cao2010face} & This paper \\
  & Kumar et al. & Wolf et al. & Cao et al. & \\
-Reference & ICCV09 \cite{kumar:iccv09} & ACCV09 \cite{wolf:accv09} & CVPR10 \cite{cao2010face} & This paper\\
+Reference & ICCV09 & ACCV09 & CVPR10 & This paper\\
+& \cite{kumar:iccv09} & \cite{wolf:accv09} & \cite{cao2010face} & \\
 \hline\hline
-Mean classification error & 14.7\%$\pm$1.2 & 13.2\%$\pm$0.3 & 15.5\%$\pm$0.5 & \bf{11.9\%$\pm$0.6} \\
+Average error & 14.7\% & 13.2\% & 15.5\% & \bf{11.9\%} \\
+& $\pm$1.2 & $\pm$0.3 & $\pm$0.5 & \bf{$\pm$0.6} \\
 \hline
 \end{tabular}
     }
@@ -69,10 +71,10 @@ Mean classification error & 14.7\%$\pm$1.2 & 13.2\%$\pm$0.3 & 15.5\%$\pm$0.5 & \
 
 \begin{figure*}[ht]
   \centering \subfigure[Misses]{
-    \includegraphics[scale=0.8]{figures/misses.pdf}
+    \includegraphics[scale=1]{figures/misses.pdf}
     \label{fig:misses}
   } \subfigure[False Positives]{
-    \includegraphics[scale=0.8]{figures/false_positives.pdf}
+    \includegraphics[scale=1]{figures/false_positives.pdf}
     \label{fig:false_positives}
   }
   \caption[]{{\bf Examples of common errors across models.} Misses tend to be
@@ -192,7 +194,7 @@ faces and lesser degrees of variation.
 
 \subsubsection{Effect of background}
 
-To explore the role of background variation, we evaluated model performance with four different background conditions: no background, white-noise background, phase-scrambled natural backgrounds (i.e. approx. 1/f noise), and natural backgrounds.  Performance as a function of background and variation level is shown Figure \ref{fig:perf_bg_variation}.  Choice of background was found to have a profound effect on model performance.  In the absence of a background, the performance for most models remained high, even at relatively high levels of variation in view, position, and scale (e.g. greater than 90\% performance at variation level 4 for the HT-L3-1st and V1-like models).  However, the inclusion of any background resulted in a precipitous drop-off in performance for all models, except for the HT-L3-1st model, whose performance degraded gradually.  In general, progressively more realistic backgrounds proved increasingly difficult for all models.
+To explore the role of background variation, we evaluated model performance with four different background conditions: no background, white-noise background, phase-scrambled natural backgrounds (i.e. approx. 1/f noise), and natural backgrounds.  Performance as a function of background and variation level is shown in Figure \ref{fig:perf_bg_variation}.  Choice of background was found to have a profound effect on model performance.  In the absence of a background, the performance for most models remained high, even at relatively high levels of variation in view, position, and scale (e.g. greater than 90\% performance at variation level 4 for the HT-L3-1st and V1-like models).  However, the inclusion of any background resulted in a precipitous drop-off in performance for all models, except for the HT-L3-1st model, whose performance degraded gradually.  In general, progressively more realistic backgrounds proved increasingly difficult for all models.
 
 % -------------------------------------
 %  Effect of Background Figure
