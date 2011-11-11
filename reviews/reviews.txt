@@ -1,0 +1,59 @@
+From: Image and Vision Computing <imavis@elsevier.com>
+Subject: Your submission to IMAVIS
+Date: November 4, 2011 10:43:12 AM EDT
+To: cox@rowland.harvard.edu
+
+Ref.:  Ms. No. IMAVIS-D-11-00352
+High-Throughput-Derived Biologically-Inspired Features for Unconstrained Face Recognition
+Dr. David Daniel Cox
+
+Image and Vision Computing
+
+Dear Dr. Cox,
+
+We have received reports from the Referees who were asked to review your manuscript.  Please find the relevant parts of each review attached to this email.  If after considering the Referees comments you find you are in agreement with them you might wish to revise your manuscript accordingly.
+
+We would ask you to provide a written statement of the way you have taken account of the referee comments in preparing the revision.  You may include the text of this statement at the beginning of the manuscript text when you submit the revised manuscript.  (It can be separated at a later stage).   
+
+Please submit your revision by the Jan 03, 2012.
+
+For your guidance, reviewers' comments are appended below.
+
+To submit a revision, go to http://ees.elsevier.com/imavis/ and log in as an Author.  You will see a menu item call Submission Needing Revision.  You will find your submission record there. 
+
+Please take into account that Electronic Annexes can be appended to your document, and archived on the web site of the journal.  They can include animations, video or audio clips, demos, additional data, etc. These electronic annexes are free of charge. You can find a guide for multimedia files at http://www.elsevier.com/wps/find/authorsview.authors/movies_animations.
+
+For technical questions regarding text, figures or video file formats, you may also contact the Journal Manager of IMAVIS, Ms. Maureen Gooley (e-mail: imavis@elsevier.com).
+
+
+Yours sincerely
+
+Maja Pantic, PhD
+Editor in Chief
+Image and Vision Computing
+
+Comments from the editor and reviewers (if any):
+
+AEs: Please prepare a minor revision addressing the points raised by Reviewer 1.  Reviewer 2  also recommended to accept with minor revisions, with no specific changes requested.  We ask that you submit your revised paper within four weeks. 
+
+
+Reviewer #1: This paper presents a brute-force search method on feature selection for face recognition. The authors test the method on LFW and reach a competitive result. The authors also test the on synthetic faces to verify the robustness of the proposed method. Some detail comments are as following:
+
+1. Although the method is probably inspired from biological facts, the proposed method still cannot correspond to V1-V3. I suggest to change the title and some claims on V1-V3 in the paper.
+
+2. As the brute-force search need a lot of computational cost, I suggest the authors to add some parts to emphasize the computation detail.
+
+3. Fig. 4(c) could be a table but not figure.
+
+
+
+
+Please note that editors and/or reviewers have uploaded files related to this submission. To access these file(s) while you are not logged into the system, please click on the link below. (Note: this link will expire after 5 clicks or 30 days.) Alternatively, you may log in to the system and click the 'View Review Attachments' link in the Action column.
+
+http://ees.elsevier.com/imavis/l.asp?i=31552&l=SQL4JES8
+
+***********************************************************
+For further assistance, please visit our customer support site at http://support.elsevier.com Here you can search for solutions on a range of topics, find answers to frequently asked questions and learn more about EES via interactive tutorials. You will also find our 24/7 support contact details should you need any further assistance from one of our customer support representatives.
+
+
+
