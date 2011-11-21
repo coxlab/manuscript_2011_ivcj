@@ -3,7 +3,8 @@ Our results provide more evidence that biologically-inspired models represent a 
 and powerful direction in face recognition research. Individual models from this
 class are able to achieve good performance (e.g. around 77\% for \emph{V1-like} models,
 84\% for \emph{HT-L3}), and blends of these models achieve more than 88\%
-correct performance, placing it amongst the best performing systems on this challenge set.
+correct performance, placing it amongst the best performing systems on this challenge set.  
+The model selection approach used here relies on a brute force search of a large space of candidate models, which is increasingly made feasible by the availability of recent advances in parallel computing resources, specifically graphics processing units (GPUs).  The roughly 15,000 models considered in this paper were evaluated in under one week.
 
 Consistent with expectations, progressively more complex, multi-layer models are
 able to outperform the simpler \emph{V1-like} model. Whether this higher
@@ -14,7 +15,7 @@ noted that the \emph{HT-L2} and \emph{HT-L3} models used here were substantially
 simplified from those present in \cite{pinto:plos09}, in that they did not have
 structured filter kernels, nor were they subjected to any unsupervised learning.
 Whether adding these features back will result in higher levels of performance
-is an important future research question.
+is an important future research question.  It should also be noted that, in terms of biological-inspiration, the model family tested here almost certainly represents just a small fraction of the complexity of the brain's visual system.  In addition, no claims are made that the three layers of the models presented here correspond in any strong way with the first three visual cortical areas.
 
 While there still remains substantial room for improvement, concerns that
 the \emph{LFW} set does not necessarily accurately reflect the ``full'' problem

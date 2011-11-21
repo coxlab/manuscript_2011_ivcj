@@ -45,9 +45,19 @@ curves for various blend groupings are shown in Fig. \ref{fig:roc_curves}.
   \includegraphics[scale=0.6]{figures/mega_blend_roc.pdf}
   \label{fig:megablend_rocs}
 }
-\subfigure[\small{comparison with literature}]{
-    \small{
-    \begin{tabular}{|c||c|c|c|c|}
+
+\caption[]{{\bf ROC curves for various model sub-families on \emph{LFW}
+    Restricted View 2.} Curves for \cite{wolf:accv09}, \cite{kumar:iccv09} and \cite{cao2010face}
+  are plotted in \ref{fig:megablend_rocs} for reference.  Plots are zoomed-in to
+  facilitate comparison.}
+\label{fig:roc_curves}
+\end{figure*}
+
+
+\begin{table}
+\caption{Comparison with literature.} 
+
+\begin{tabular}{|c||c|c|c|c|}
 \hline
 %Reference & Kumar et al. ICCV09 \cite{kumar:iccv09} & Wolf et al. ACCV09 \cite{wolf:accv09} & Cao et al. CVPR10 \cite{cao2010face} & This paper \\
  & Kumar et al. & Wolf et al. & Cao et al. & \\
@@ -58,15 +68,9 @@ Average error & 14.7\% & 13.2\% & 15.5\% & \bf{11.9\%} \\
 & $\pm$1.2 & $\pm$0.3 & $\pm$0.5 & \bf{$\pm$0.6} \\
 \hline
 \end{tabular}
-    }
 \label{fig:table_soa}
-}
-\caption[]{{\bf ROC curves for various model sub-families on \emph{LFW}
-    Restricted View 2.} Curves for \cite{wolf:accv09}, \cite{kumar:iccv09} and \cite{cao2010face}
-  are plotted in \ref{fig:megablend_rocs} for reference.  Plots are zoomed-in to
-  facilitate comparison.}
-\label{fig:roc_curves}
-\end{figure*}
+\end{table}
+
 
 
 \begin{figure*}[ht]
