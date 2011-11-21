@@ -1,0 +1,36 @@
+
+We thank the reviewers for their thoughtful comments.  Specific responses to reviewer comments are below:
+
+Reviewer #1:
+
+1. Although the method is probably inspired from biological facts, the
+proposed method still cannot correspond to V1-V3. I suggest to change the
+title and some claims on V1-V3 in the paper.
+
+We agree that readers should not over-interpret the presented model as corresponding in any rigid way to particular brain areas.  This is why the models are consistently referred to as "L2", and "L3" models (e.g. rather than "V2" or "V3").  The "V1-like" name, in addition to implying an incomplete correspondence (in the "-like" portion), describes a model that comes from the existing literature and must be retained for clarity. 
+
+We have added a new section in the discussion clarifying this issue.  We maintain that the title should not be changed, since these are indeed "biologically-inspired" features, and no specific claims beyond this are made.
+
+2. As the brute-force search need a lot of computational cost, I suggest the
+authors to add some parts to emphasize the computation detail.
+
+This is an excellent point.  We've added to the discussion a section emphasizing the role of GPU-computing in making this result possible, and indicating how long the search took.
+
+3. Fig. 4(c) could be a table but not figure.
+
+We have made Figure 4c into Table 2.
+
+
+Reviewer #2:
+
+1. explain precisely levels of variation in Fig. 6-9
+
+The levels of variation described in Figures 6-9 are described in detail in the methods, though we agree that this connection is difficult for a reader to follow.  To help ameliorate this situation, we have added a pointer to this section in the caption of Figure 6, to aid the reader in finding the relevant section.
+
+2. display different backgrounds mentioned in Fig. 9
+
+The backgrounds mentioned in Figure 9 are displayed in Figure 3.  We have added a reference in this figure to make it easier for the reader to find this correspondence.
+
+3. References: include full bibliographical information (full names of journals and conferences, volumes, issues, page numbers, etc.)
+
+We have fleshed out the references to include full bibliographic information.

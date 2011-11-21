@@ -32,7 +32,7 @@ A major advantage of our high-throughput approach is that it produces not one,
 but a diversity of models, and this situation is ideally suited to kernel
 blending approaches.  Once blending is added, especially when coupled with an
 intelligent algorithm for weighting blended kernels, several different blends
-achieved performance exceeding previously reported state-of-the-art values (see Figure \ref{fig:table_soa}).  ROC
+achieved performance exceeding previously reported state-of-the-art values (see Table \ref{tab:table_soa}).  ROC
 curves for various blend groupings are shown in Fig. \ref{fig:roc_curves}.
 
 \begin{figure*}[ht]
@@ -68,7 +68,7 @@ Average error & 14.7\% & 13.2\% & 15.5\% & \bf{11.9\%} \\
 & $\pm$1.2 & $\pm$0.3 & $\pm$0.5 & \bf{$\pm$0.6} \\
 \hline
 \end{tabular}
-\label{fig:table_soa}
+\label{tab:table_soa}
 \end{table}
 
 
@@ -123,7 +123,7 @@ similar expression.
 \begin{figure}[ht]
     \centering
     \includegraphics[scale=0.8]{figures/eight_faces_naturalbg_variation_v1like_a_plus.pdf}
-    \caption[]{{\bf Model performance on synthetic faces as a function of level of variation}}
+    \caption[]{{\bf Model performance on synthetic faces as a function of level of variation.  Variation levels are described in detail in Section \ref{synthetic_methods}.}}
 	\label{fig:perf_variation_levels}
 \end{figure}
 
@@ -223,7 +223,7 @@ To explore the role of background variation, we evaluated model performance with
   \label{fig:bg_var6}
 }
 
-\caption[]{{\bf Effect of background type on performance with synthetic faces.} Note that the performance was 100\% in all cases for the zero variation condition (data not shown).}
+\caption[]{{\bf Effect of background type on performance with synthetic faces.} Note that the performance was 100\% in all cases for the zero variation condition (data not shown).  Example backgrounds from each class are shown in Figure \ref{fig:bg_variation}. }
 \label{fig:perf_bg_variation}
 \end{figure*}
 
