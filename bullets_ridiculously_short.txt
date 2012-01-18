@@ -1,0 +1,6 @@
+> We describe a class of biologically-inspired face recognition models.
+
+> We use high-throughput search procedure to explore a large range of candidate models.
+
+> Models found this way achieve state-of-the-art performance on the LFW test set.
+
